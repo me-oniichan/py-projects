@@ -1,7 +1,6 @@
 from tkinter import *
 import random
 
-
 choice_list = ['scissor','stone','paper']
 root = Tk()
 Label(root, text = "START", fg = "red", font ="Arial 20 bold").pack(pady = 3)
@@ -90,8 +89,6 @@ userp.pack(side=LEFT, anchor = 'sw')
 compp=Label(f2, textvariable = comp, font='Lucida 14 bold')
 compp.pack(anchor='se', side = RIGHT)
 f2.pack(anchor='center')
-
-
 
 scr=Frame(root)
 scr.pack()
