@@ -2,6 +2,7 @@ from tkinter import *
 from math import *
 root=Tk()
 root.geometry('300x400')
+root.maxsize(300,400)
 root.title('My Calculator')
 root.config(background='#212121')
 
@@ -23,7 +24,7 @@ def result():
     except:
         val.set('error')
 
-l1=Label(root, text='Calculator',fg='white',bg='#313131',font='lucida 18 bold')
+l1=Label(root, text='Calculator',fg='white',bg='#212121',font='lucida 18 bold')
 l1.pack()
 val=StringVar()
 screen= Entry(root,text=val.get(),borderwidth=2,relief=SUNKEN,font='comic 14',width=300,textvariable=val, justify = "right")
