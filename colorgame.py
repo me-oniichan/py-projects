@@ -58,7 +58,12 @@ score.set(0)
 timer = tk.StringVar()
 status = False
 
-tk.Label(root, text = "Color Game", fg = "red", bg = "#2f2f2f", font = "consolas 35 bold").pack(pady = 10)
+label_color= rn.choice(clist)
+
+
+
+tk.Label(root, text = "Color Game", fg = label_color, bg = "#2f2f2f", font = "consolas 35 bold").pack(pady = 10)
+
 
 flash = tk.Label(root, bg='#eeeeee', fg = cdisplay.get(), textvariable = color, font = 'consolas 30', borderwidth = 3, relief = tk.RIDGE, padx= 10, pady = 3)
 flash.pack(padx = 10, pady= 8)
